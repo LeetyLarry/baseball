@@ -2,50 +2,39 @@ package com.ty.baseball.model;
 
 public class Player {
 
-    private String name;
-    private String team;
-    private String pos;
-    private int age;
-    private int gamesPlayed;
-    private int atBats;
-    private int runs;
-    private int hits;
-    private int homeRuns;
-    private int rbis;
-    private int stolenBases;
-    private int walks;
-    private double battingAverage;
-    private double ops;
-
     public Player() {
 
     }
 
-    public Player(String name, String team, String pos, int age, int gamesPlayed, int atBats, int runs, int hits,
-                  int homeRuns, int rbis, int stolenBases, int walks, double battingAverage, double ops) {
-        this.name = name;
+    public Player(String team, String position, int age, int games, int atBats,
+                  int hits, int hr, int rbi, int sb, int walks, double average, double ops) {
         this.team = team;
-        this.pos = pos;
+        this.position = position;
         this.age = age;
-        this.gamesPlayed = gamesPlayed;
+        this.games = games;
         this.atBats = atBats;
-        this.runs = runs;
         this.hits = hits;
-        this.homeRuns = homeRuns;
-        this.rbis = rbis;
-        this.stolenBases = stolenBases;
+        this.hr = hr;
+        this.rbi = rbi;
+        this.sb = sb;
         this.walks = walks;
-        this.battingAverage = battingAverage;
+        this.average = average;
         this.ops = ops;
     }
 
-    public String getName() {
-        return name;
-    }
+    private String team;
+    private String position;
+    private int age;
+    private int games;
+    private int atBats;
+    private int hits;
+    private int hr;
+    private int rbi;
+    private int sb;
+    private int walks;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    private double average;
+    private double ops;
 
     public String getTeam() {
         return team;
@@ -55,12 +44,12 @@ public class Player {
         this.team = team;
     }
 
-    public String getPos() {
-        return pos;
+    public String getPosition() {
+        return position;
     }
 
-    public void setPos(String pos) {
-        this.pos = pos;
+    public void setPosition(String position) {
+        this.position = position;
     }
 
     public int getAge() {
@@ -71,12 +60,12 @@ public class Player {
         this.age = age;
     }
 
-    public int getGamesPlayed() {
-        return gamesPlayed;
+    public int getGames() {
+        return games;
     }
 
-    public void setGamesPlayed(int gamesPlayed) {
-        this.gamesPlayed = gamesPlayed;
+    public void setGames(int games) {
+        this.games = games;
     }
 
     public int getAtBats() {
@@ -87,14 +76,6 @@ public class Player {
         this.atBats = atBats;
     }
 
-    public int getRuns() {
-        return runs;
-    }
-
-    public void setRuns(int runs) {
-        this.runs = runs;
-    }
-
     public int getHits() {
         return hits;
     }
@@ -103,28 +84,28 @@ public class Player {
         this.hits = hits;
     }
 
-    public int getHomeRuns() {
-        return homeRuns;
+    public int getHr() {
+        return hr;
     }
 
-    public void setHomeRuns(int homeRuns) {
-        this.homeRuns = homeRuns;
+    public void setHr(int hr) {
+        this.hr = hr;
     }
 
-    public int getRbis() {
-        return rbis;
+    public int getRbi() {
+        return rbi;
     }
 
-    public void setRbis(int rbis) {
-        this.rbis = rbis;
+    public void setRbi(int rbi) {
+        this.rbi = rbi;
     }
 
-    public int getStolenBases() {
-        return stolenBases;
+    public int getSb() {
+        return sb;
     }
 
-    public void setStolenBases(int stolenBases) {
-        this.stolenBases = stolenBases;
+    public void setSb(int sb) {
+        this.sb = sb;
     }
 
     public int getWalks() {
@@ -135,12 +116,12 @@ public class Player {
         this.walks = walks;
     }
 
-    public double getBattingAverage() {
-        return battingAverage;
+    public double getAverage() {
+        return average;
     }
 
-    public void setBattingAverage(double battingAverage) {
-        this.battingAverage = battingAverage;
+    public void setAverage(double average) {
+        this.average = average;
     }
 
     public double getOps() {
